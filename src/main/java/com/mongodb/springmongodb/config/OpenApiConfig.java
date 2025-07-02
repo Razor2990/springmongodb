@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
 	@Bean
-    public OpenAPI customOpenAPI() {
+    OpenAPI customOpenAPI() {
 
         Server devServer = new Server();
         devServer.setUrl("https://dev.miapp.com/api");
