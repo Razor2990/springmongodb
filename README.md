@@ -1,9 +1,9 @@
 
-📘 Proyecto Spring Boot con MongoDB
+## 📘 Proyecto Spring Boot con MongoDB
 
 Este proyecto es una API REST construida con Spring Boot y conectada a una base de datos MongoDB. A continuación, encontrarás los pasos necesarios para clonar, configurar y ejecutar el proyecto localmente.
 
-🚀 Requisitos Previos
+##🚀 Requisitos Previos
 -- STS IDE / IntelliJ / Netbeans
 
 --Java 17+
@@ -14,13 +14,13 @@ Este proyecto es una API REST construida con Spring Boot y conectada a una base 
 
 --Git
 
-🛠️ Clonar el proyecto
+##🛠️ Clonar el proyecto
 bash
 Copiar
 Editar
 git clone https://github.com/Razor2990/springmongodb.git
 cd springmongodb
-⚙️ Configurar MongoDB
+##⚙️ Configurar MongoDB
 Opción 1: Usar MongoDB local
 Descarga e instala MongoDB desde: https://www.mongodb.com/try/download/community
 
@@ -51,7 +51,7 @@ properties
 Copiar
 Editar
 spring.data.mongodb.uri=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/springmongodb?retryWrites=true&w=majority
-📦 Construir y ejecutar el proyecto
+##📦 Construir y ejecutar el proyecto
 bash
 Copiar
 Editar
@@ -68,7 +68,7 @@ bash
 Copiar
 Editar
 java -jar target/springmongodb.jar
-📮 Endpoints de ejemplo
+## 📮 Endpoints de ejemplo
 Puedes usar herramientas como Postman o curl para probar los endpoints. Algunos ejemplos:
 
 GET /todos
@@ -79,19 +79,26 @@ PUT /todos/{id}
 
 DELETE /todos/{id}
 
-📄 Documentación de API
+## 🔗 API Documentation 📄
 La API está documentada con Swagger y puede verse accediendo a:
 
-bash
-Copiar
-Editar
-http://localhost:8080/swagger-ui.html
-🚀 Resultado final
-Elemento	Ruta final
-JSON OpenAPI	http://localhost:8080/api-docs
-Swagger UI	http://localhost:8080/swagger
-ReDoc (si lo usas)	http://localhost:8080/redoc.html
-Asegúrate de que Swagger esté correctamente configurado en tu pom.xml y clase de configuración.
+- Swagger UI: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+- OpenAPI JSON: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+- OpenAPI yml: [http://localhost:8080/v3/api-docs.yml](http://localhost:8080/v3/api-docs.yml)
+- Redocly UI: [http://localhost:8080/redoc.html](http://localhost:8080/redoc.html)
 
-🧑‍💻 Autor
+## 📈 Health Checks (Spring Boot Actuator)
+
+- Health General: [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
+- Health MongoDB: [http://localhost:8080/actuator/health/mongo](http://localhost:8080/actuator/health/mongo)
+- Liveness Probe: [http://localhost:8080/actuator/health/liveness](http://localhost:8080/actuator/health/liveness)
+- Readiness Probe: [http://localhost:8080/actuator/health/readiness](http://localhost:8080/actuator/health/readiness)
+
+## ⚙️ Otros Endpoints útiles (solo si están expuestos)
+
+- Info: [http://localhost:8080/actuator/info](http://localhost:8080/actuator/info)
+- Metrics: [http://localhost:8080/actuator/metrics](http://localhost:8080/actuator/metrics)
+- Beans: [http://localhost:8080/actuator/beans](http://localhost:8080/actuator/beans)
+
+## 🧑‍💻 Autor
 RazorJs — GitHub
