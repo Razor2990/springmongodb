@@ -86,6 +86,11 @@ bash
 Copiar
 Editar
 http://localhost:8080/swagger-ui.html
+🚀 Resultado final
+Elemento	Ruta final
+JSON OpenAPI	http://localhost:8080/api-docs
+Swagger UI	http://localhost:8080/swagger
+ReDoc (si lo usas)	http://localhost:8080/redoc.html
 Asegúrate de que Swagger esté correctamente configurado en tu pom.xml y clase de configuración.
 
 🧑‍💻 Autor
